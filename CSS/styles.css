@@ -416,6 +416,9 @@ iframe{
     
   }
   @media (max-width: 560px) {
+    .somos{
+        margin: 2em 0 3em 0;
+    }
     .neoarte_logo_big{
         height: 65%;
     }
