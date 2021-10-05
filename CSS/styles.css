@@ -416,6 +416,13 @@ iframe{
     
   }
   @media (max-width: 560px) {
+    .float{
+        width:50px;
+        height:50px;
+        bottom:20px;
+        right:20px;
+  
+    }
     .somos{
         margin: 2em 0 3em 0;
     }
