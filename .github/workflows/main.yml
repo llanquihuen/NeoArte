@@ -17,5 +17,10 @@ jobs:
         host: ${{ secrets.HOST }}
         username: ${{ secrets.USERNAME }}
         key: ${{ secrets.KEY }}
-        script: whoami
+        script: |
+          cd /var/www/neoarte/html
+          git pull
+#          npm install
+#          npm run build
+#          pm2 restart all
 
