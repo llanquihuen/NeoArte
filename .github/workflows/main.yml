@@ -7,21 +7,15 @@ on:
     branches: [ main ]
 
 jobs:
-    build:
-      name: Copy files to server
-      runs-on: ubuntu-20.04
-      steps:
-        - name: execute ssh command
-          uses: appleboy/ssh-action@v0.1.8
-          with:
-              host: ${{ secrets.HOST }}
-              username: ${{ secrets.USERNAME }}
-              key: ${{ secrets.KEY }}
-              script: |
-                whoami
-                ls -al
-#                cd /var/www/html
-#                git pull
-#                npm install
-#                npm run build
+  build:
+    name: Copy files to server
+    runs-on: ubuntu-20.04
+    steps:
+    - name: execute ssh command
+      uses: appleboy/ssh-action@v0.1.8
+      with:
+        host: ${{ secrets.HOST }}
+        username: ${{ secrets.USERNAME }}
+        key: ${{ secrets.KEY }}
+        script: whoami
 
