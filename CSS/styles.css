@@ -31,6 +31,12 @@ body{
 #Glogo{
     cursor: pointer;
 }
+#logoG{
+    cursor: pointer;
+}
+#NeoArtelogo{
+    cursor: pointer;
+}
 .stick{
     position: fixed;
     background: linear-gradient(90deg, #070908cc 25%, #FF6E00e9 50%); 
@@ -106,7 +112,7 @@ body{
 /*------ NAVBAR ------*/
 
 .menu{
-    background: linear-gradient(90deg, #070908 25%, #FF6E00 50%); 
+    background: linear-gradient(90deg, #070908 25%, #FF6E00 49%);
     color: black;
     height: 74px;
     display: flex;
